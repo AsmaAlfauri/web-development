@@ -3,31 +3,29 @@
 <head>
     <title>Exercise #3: Floating articles</title>
     <style>
-        body {
+      body {
             background-color: #cccccc;
         }
        * {
-       	box-sizing: border-box;
+        box-sizing: border-box;
        }
        .promo {
          border-style: solid;
          border-width: 3px;
-         border-color:red; 
+         border-color:red;
          background-color: #cccccc;
-         position: fixed;
          font-weight: bold;
          font-size: 20px;
-         align-items: center;
-         top: 20%;
+         display: inline-block;
         }
        .all {
-       	width: 100px;
-       	height: 200px;
-       	overflow: hidden;
-       	float: left;
-       	width: 30%;
-       	background-color: #DCDCDC;
-       	margin :10px;
+        width: 100px;
+        height: 200px;
+        overflow: hidden;
+        float: left;
+        width: 30%;
+        background-color: #DCDCDC;
+        margin :10px;
 
 
        }
@@ -63,6 +61,13 @@
     lacinia quam diam, ac luctus purus mattis a. Nunc finibus diam eget neque molestie, in convallis massa aliquet. Cras
     gravida turpis sed bibendum scelerisque.
 </article>
+<article class="promo">
+    Phasellus vitae pulvinar ipsum. Proin egestas lobortis mauris. Ut vel est vel nulla euismod pretium eu aliquet diam.
+    Nulla ac auctor ante, volutpat pharetra nunc. Etiam nec nisl gravida, efficitur felis gravida, facilisis risus. Nunc
+    augue sem, molestie ac congue at, auctor sit amet turpis. Nulla egestas ullamcorper auctor. Vestibulum ac volutpat
+    lacus. Donec non magna non tellus volutpat fermentum. Ut nec sagittis orci. Aliquam pulvinar feugiat quam,
+    vestibulum faucibus elit ultricies sed.
+</article>
 <article class="all">
     Morbi commodo bibendum mattis. Vivamus commodo ex felis, quis dictum quam molestie quis. Mauris nunc felis, sagittis
     vel massa id, sodales congue nunc. Maecenas tempor nulla diam, ac fermentum purus fringilla id. Lorem ipsum dolor
@@ -78,12 +83,6 @@
     gravida turpis sed bibendum scelerisque.
 </article>
 
-<article class="promo">
-    Phasellus vitae pulvinar ipsum. Proin egestas lobortis mauris. Ut vel est vel nulla euismod pretium eu aliquet diam.
-    Nulla ac auctor ante, volutpat pharetra nunc. Etiam nec nisl gravida, efficitur felis gravida, facilisis risus. Nunc
-    augue sem, molestie ac congue at, auctor sit amet turpis. Nulla egestas ullamcorper auctor. Vestibulum ac volutpat
-    lacus. Donec non magna non tellus volutpat fermentum. Ut nec sagittis orci. Aliquam pulvinar feugiat quam,
-    vestibulum faucibus elit ultricies sed.
-</article>
+
 </body>
 </html>
