@@ -2,8 +2,55 @@
 <html>
 <head>
 	<title>ex2 css layout</title>
+	<style>
+		html{
+			background-color: black;
+		}
+		h2{
+			text-align: center;
+			color: white;
+		}
+		p{
+			text-align: center;
+			color: aqua;
+		}
+		.container{
+			display: flex;
+			background-color: aqua;
+			
+		}
+		.container > div {
+			background-color: white;
+			margin: auto;
+			padding: 20px;
+			font-size: 10px;
+		}
+		.container > button {
+			background-color: white;
+			margin: auto;
+			padding: 20px;
+			font-size: 10px;
+		}
+	</style>
 </head>
 <body>
-
+	<h2> Responsive Pagination</h2>
+	 <p>I'm a responsive page menu built with flexbox</p>
+	 <div class="container">
+	 	<button type="button"> << </button>
+	 	<button type="button"> < </button>
+	 	<div>1</div>
+	 	<div>2</div>
+	 	<div>3</div>
+	 	<div>4</div>
+	 	<div>5</div>
+	 	<div>6</div>
+	 	<div>7</div>
+	 	<div>8</div>
+	 	<div>9</div>
+	 	<div>10</div>
+	 	<button type="button"> > </button>
+	 	<button type="button"> >> </button>
+	 </div>
 </body>
 </html>
