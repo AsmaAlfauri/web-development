@@ -3,8 +3,12 @@
 <head>
 	<title>ex2 css layout</title>
 	<style>
-		html{
+		body{
 			background-color: black;
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			height: 200px;
 		}
 		h2{
 			text-align: center;
@@ -17,23 +21,32 @@
 		.container{
 			display: flex;
 			background-color: aqua;
-			
+
 		}
 		.container > div {
 			background-color: white;
 			margin: auto;
 			padding: 20px;
-			font-size: 10px;
+			font-size: 18px;
 		}
 		.container > button {
 			background-color: white;
 			margin: auto;
 			padding: 20px;
 			font-size: 10px;
+			border: 0;
+
+		}
+		.main{
+background-color: gray;
+    position: absolute;
+    top: 50%;
+    margin-top: -66px;
 		}
 	</style>
 </head>
 <body>
+	<div class="main">
 	<h2> Responsive Pagination</h2>
 	 <p>I'm a responsive page menu built with flexbox</p>
 	 <div class="container">
@@ -51,6 +64,7 @@
 	 	<div>10</div>
 	 	<button type="button"> > </button>
 	 	<button type="button"> >> </button>
+	 </div>
 	 </div>
 </body>
 </html>
