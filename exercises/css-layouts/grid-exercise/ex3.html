@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ex3 grid ex</title>
+	<style>
+		form{
+			background-color: #EEEEEE;
+		}
+		.container{
+			display: grid;
+			grid-template-columns: 25% 75%;
+			width: 100%;
+		}
+		input{
+			width: 100%;
+		}
+		#comments {
+			grid-column: 1/2;
+			grid-row: 1/5;
+			width:75%;
+			height:75%
+
+
+
+		}
+		button{
+			grid-column: 2/3;
+			grid-row: 4;
+			width: 100%;
+			color: white;
+			width: 100%;
+			display:block;
+			background-color: gray;
+		}
+		p{
+			margin-bottom: 0;
+		}
+	</style>
+</head>
+<body>
+	<form>
+	<div class="container">
+		<div class="in">
+			<p>Name</p>
+			<input type="type" name="name" placeholder="enter first and last name">
+		</div>
+		<div class="in">
+			<p>Email</p>
+			<input type="email" name="email" placeholder="enter your email">
+		</div>
+		<div class="in">
+			<p>Phone</p>
+			 <input type="number" name="number" placeholder="enter your number">
+		</div>
+		<div id="comments">
+			comments <textarea  rows="10" cols="20"></textarea>
+		</div>
+		<div id="submit">
+			<button type="submit" value="Submit">Submit</button>
+		</div>
+	</div>
+	</form>
+</body>
+</html>
