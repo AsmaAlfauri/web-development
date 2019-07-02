@@ -1,24 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
     <title>Exercise #7: Wild & Wacky Vegetables</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        
+        .quot{
+            box-sizing: border-box;
+            border-left: solid #F8F9FA 5px ;
+            padding: 10px;
+        }
+        img{
+            display:inline;
+            width:20%;
+        }
+        li{
+         list-style:none;   
+        }
+        
+    </style>
 </head>
 <body>
 
-<h1>Some Favorites</h1>
-<ul>
-    <li><a href="#">Celery Root</a>
-    </li>
-    <li><a href="#">Spaghetti Squash</a>
-    </li>
-    <li><a href="#">Killer Mushrooms</a>
-    </li>
-</ul>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+        <div class="card" style="width: 18rem;background-color: #F5F5F5" >
+        <div class="card-body">
+            <h5 class="card-title Some" style="color: #99A3B0 ">Some Favorites</h5>
+            <ul>
+                <li><a href="#">Celery Root</a>
+                </li>
+                <li><a href="#">Spaghetti Squash</a>
+                </li>
+                <li><a href="#">Killer Mushrooms</a>
+                </li>
+            </ul>
+            <input type="text" name="search Recipes">
+            <button class="btn btn-primary">search Recipes</button>
+        </div>
+        </div>
+    </div>
 
-<h1>Wild & Wacky Vegetables</h1>
-<p>Kale courgette salsify mustard broccoli seakale wakame potato
+    <div class="col-8">
+        <p class="alert alert-danger">Uh-oh... Have you had your daily dones of vegetables today?</p>
+        <h1>Wild & Wacky Vegetables</h1>
+        <blockquote class="blockquote quot">
+            <p class="mb-0">
+                The beet is the most inteste of vegetables. The radish, admittedly, is more feverish, but the fire of the radis is a cold fire, the fire of discontent, not of passion. Tomatoes are lusty enough, yet there runs through a tomatoe the undercurrent of frivolity. Beets are deadly serious.
+                <footer class="blockquote-footer">Tom Robbins</footer>
+            </p>
+        </blockquote>
+        <h1>Some Diseases</h1>
+        <table class="table table-bordered table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Veggie</th>
+      <th scope="col">Disease</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beets</td>
+      <td>Beeturia</td>
+    </tr>
+    <tr>
+      <td>Carrots</td>
+      <td>Carotenosis</td>
+    </tr>
+  </tbody>
+</table>
+ 
+    <img class="img-thumbnail" src="/home/asma/Downloads/web-development/exercises/bootstrap/images/800px-Beets-Bundle.jpg" >
+    <img class="img-thumbnail" src="/home/asma/Downloads/web-development/exercises/bootstrap/images/CarrotDiversityLg.jpg" >
+    <img class="img-thumbnail" src="/home/asma/Downloads/web-development/exercises/bootstrap/images/220px-Green_Asparagus_New_York_11_May_2006.jpg" >
+  
+        <p>Kale courgette salsify mustard broccoli seakale wakame potato
     fava bean tigernut leek celery spinach avocado cabbage celtuce rutabaga
     kohlrabi. Parsnip pea soko groundnut bitterleaf spring onion. Grape
     dulse rutabaga lentil gram kakadu plum water spinach cabbage lotus root.
@@ -35,6 +92,7 @@
     taro catsear kombu rock melon pea sprouts collard greens mustard
     courgette lettuce soko maize plantain.
 </p>
-
+   
+</div>
 </body>
 </html>
