@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ex4 grid ex</title>
+	<style>
+		.container{
+			display: grid;
+			grid-template-columns: 35% 45% 20%;
+			grid-gap: 10px;
+			background-color: white;
+			}
+			#header1{
+				grid-column: 1/4;
+				grid-row:1/2;
+			}	
+			#nav1{
+				grid-column: 1/2;
+				grid-row: 2/4;
+			}
+			#footer1{
+				grid-column: 2/4;
+				grid-row: 3/4;
+			}
+			.container > div{
+				background-color: yellow;
+				padding: 5px 0 ;
+			}	
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="header1">Header</div>
+		<div id="nav1">Nav</div>
+		<div id="article1">Article</div>
+		<div id="ads1">Ads</div>
+		<div id="footer1">Footer</div>
+	</div>
+</body>
+</html>
